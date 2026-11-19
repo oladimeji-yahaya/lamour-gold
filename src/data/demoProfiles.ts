@@ -1,0 +1,88 @@
+import type { DemoProfile } from './types';
+
+// FICTIONAL DEMO DATA. These people do not exist.
+export const DEMO_PROFILES: DemoProfile[] = [
+  {
+    id: 'd-amara', firstName: 'Amara', age: 29, gender: 'Woman', profession: 'Architect', area: 'Victoria Island', distanceKm: 3,
+    experiences: ['love'], likesYou: true,
+    bio: 'I design buildings for a living and spend weekends looking for the best suya in town. Looking for steady, kind and curious.',
+    interests: ['Art', 'Travel', 'Cooking', 'Jazz', 'Photography'], values: ['Honesty', 'Family', 'Growth', 'Kindness'],
+    lifestyle: { smoking: 'Never', drinking: 'Socially', fitness: 'A few times a week', social: 'Balanced' },
+    communication: ['Voice notes', 'In person'], relationshipGoals: 'A serious relationship that could lead to marriage.',
+    prompts: [{ question: 'A perfect Sunday looks like…', answer: 'Late brunch, a gallery, then cooking for friends.' }, { question: 'A green flag for me is…', answer: 'Saying sorry first and meaning it.' }],
+  },
+  {
+    id: 'd-daniel', firstName: 'Daniel', age: 33, gender: 'Man', profession: 'Product Manager', area: 'Lekki', distanceKm: 6,
+    experiences: ['love', 'evening'], likesYou: true,
+    bio: 'Product manager by day, amateur chef by night. I believe in slow dinners and honest conversations.',
+    interests: ['Cooking', 'Hiking', 'Reading', 'Afrobeats', 'Travel'], values: ['Honesty', 'Ambition', 'Family', 'Humor'],
+    lifestyle: { smoking: 'Never', drinking: 'Socially', fitness: 'A few times a week', social: 'Balanced' },
+    communication: ['Texting', 'Calls'], relationshipGoals: 'Building something lasting with a partner who is also a best friend.',
+    prompts: [{ question: 'I get along best with people who…', answer: 'Laugh easily and tell the truth kindly.' }, { question: 'Something I am working on is…', answer: 'Switching off my phone on weekends.' }],
+  },
+  {
+    id: 'd-tobi', firstName: 'Tobi', age: 36, gender: 'Man', profession: 'Surgeon', area: 'Ikoyi', distanceKm: 8,
+    experiences: ['love'], likesYou: false,
+    bio: 'Long shifts, quiet weekends. I am looking for someone grounded who values commitment and rest.',
+    interests: ['Reading', 'Jazz', 'Fitness', 'Travel'], values: ['Loyalty', 'Faith', 'Family', 'Growth'],
+    lifestyle: { smoking: 'Never', drinking: 'Never', fitness: 'Daily', social: 'Homebody' },
+    communication: ['Calls', 'In person'], relationshipGoals: 'Marriage-minded, ready to settle down.',
+    prompts: [{ question: 'The way to win me over is…', answer: 'Consistency and a good book recommendation.' }],
+  },
+  {
+    id: 'd-zuri', firstName: 'Zuri', age: 26, gender: 'Woman', profession: 'Photographer', area: 'Yaba', distanceKm: 11,
+    experiences: ['spark', 'evening'], likesYou: true,
+    bio: 'Easygoing and spontaneous. I like keeping things light, clear and honest about what each of us wants.',
+    interests: ['Photography', 'Dancing', 'Live music', 'Afrobeats', 'Fashion'], values: ['Independence', 'Adventure', 'Humor', 'Honesty'],
+    lifestyle: { smoking: 'Socially', drinking: 'Socially', fitness: 'Occasionally', social: 'Social butterfly' },
+    communication: ['Texting', 'Quick and playful'], relationshipGoals: 'Casual dating with clear communication and mutual respect. Boundaries first.',
+    prompts: [{ question: 'A green flag for me is…', answer: 'Asking what I am comfortable with, and listening.' }],
+  },
+  {
+    id: 'd-kai', firstName: 'Kai', age: 31, gender: 'Non-binary', profession: 'Music Producer', area: 'Surulere', distanceKm: 14,
+    experiences: ['spark'], likesYou: false,
+    bio: 'Studio nights, beach days. Looking for connection without pressure, with plenty of talking about what we both want.',
+    interests: ['Electronic', 'Live music', 'Beach days', 'Gaming', 'Dancing'], values: ['Independence', 'Honesty', 'Adventure'],
+    lifestyle: { smoking: 'Never', drinking: 'Socially', fitness: 'Occasionally', social: 'Balanced' },
+    communication: ['Voice notes', 'Slow and thoughtful'], relationshipGoals: 'Casual and open, with consent and clarity at every step.',
+    prompts: [{ question: 'My most underrated quality is…', answer: 'I am a very good listener.' }],
+  },
+  {
+    id: 'd-lena', firstName: 'Lena', age: 38, gender: 'Woman', profession: 'Attorney', area: 'Ikeja GRA', distanceKm: 17,
+    experiences: ['spark', 'love'], likesYou: false,
+    bio: 'Direct, funny, and busy. I prefer to know exactly where I stand, and I extend the same courtesy.',
+    interests: ['Wine', 'Travel', 'Fitness', 'Film'], values: ['Honesty', 'Independence', 'Ambition'],
+    lifestyle: { smoking: 'Never', drinking: 'Socially', fitness: 'Daily', social: 'Balanced' },
+    communication: ['Calls', 'Quick and playful'], relationshipGoals: 'Open to seeing where things go, with no assumptions either way.',
+    prompts: [{ question: 'The way to win me over is…', answer: 'Be clear, be kind, and be on time.' }],
+  },
+  {
+    id: 'd-ife', firstName: 'Ife', age: 27, gender: 'Woman', profession: 'Curator', area: 'Ikoyi', distanceKm: 7,
+    experiences: ['evening', 'love'], likesYou: true,
+    bio: 'I spend my days among paintings and my evenings hunting for the next great opening night.',
+    interests: ['Art', 'Museums', 'Jazz', 'Fine dining', 'Reading'], values: ['Kindness', 'Growth', 'Honesty'],
+    lifestyle: { smoking: 'Never', drinking: 'Socially', fitness: 'Occasionally', social: 'Balanced' },
+    communication: ['Texting', 'Slow and thoughtful'], relationshipGoals: 'Great company for culture and dinner, and open to more.',
+    prompts: [{ question: 'A perfect Sunday looks like…', answer: 'An exhibition, a long lunch, a slow walk home.' }],
+  },
+  {
+    id: 'd-marcus', firstName: 'Marcus', age: 35, gender: 'Man', profession: 'Chef', area: 'Lekki Phase 1', distanceKm: 9,
+    experiences: ['evening'], likesYou: false,
+    bio: 'Chef who loves a shared table. Looking for dinner partners and concert buddies.',
+    interests: ['Cooking', 'Fine dining', 'Live music', 'Soul', 'Street food'], values: ['Humor', 'Kindness', 'Loyalty'],
+    lifestyle: { smoking: 'Never', drinking: 'Socially', fitness: 'A few times a week', social: 'Social butterfly' },
+    communication: ['In person', 'Texting'], relationshipGoals: 'Shared meals and good company. See where it goes.',
+    prompts: [{ question: 'I get along best with people who…', answer: 'Are curious about food and people.' }],
+  },
+  {
+    id: 'd-nia', firstName: 'Nia', age: 24, gender: 'Woman', profession: 'Journalist', area: 'Yaba', distanceKm: 12,
+    experiences: ['evening', 'spark'], likesYou: false,
+    bio: 'Always at a concert, a panel or a pop-up. Say hello if you want company at the next one.',
+    interests: ['Live music', 'Writing', 'Film', 'R&B', 'Street food'], values: ['Adventure', 'Humor', 'Growth'],
+    lifestyle: { smoking: 'Never', drinking: 'Socially', fitness: 'Occasionally', social: 'Social butterfly' },
+    communication: ['Quick and playful', 'Texting'], relationshipGoals: 'Fun outings first. Everything else is a conversation, never an assumption.',
+    prompts: [{ question: 'Something I am working on is…', answer: 'Saying no more often.' }],
+  },
+];
+
+export const getProfile = (id: string) => DEMO_PROFILES.find((p) => p.id === id);

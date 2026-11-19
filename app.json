@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "L'AMOUR GOLD",
+    "slug": "lamour-gold",
+    "scheme": "lamourgold",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#080808",
+    "ios": { "supportsTablet": false, "bundleIdentifier": "com.lamourgold.app" },
+    "android": { "package": "com.lamourgold.app" },
+    "plugins": ["expo-router", "expo-secure-store", "expo-font"],
+    "experiments": { "typedRoutes": true }
+  }
+}
