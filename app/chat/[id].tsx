@@ -47,7 +47,7 @@ export default function Chat() {
       <View style={{ flexDirection: 'row', alignItems: 'center', gap: 12, padding: 16, borderBottomWidth: 1, borderBottomColor: colors.border }}>
         <Pressable onPress={() => router.back()} hitSlop={12}><AppText variant="label">Back</AppText></Pressable>
         <AppText variant="title" style={{ flex: 1, fontSize: 20 }}>{p.firstName}</AppText>
-        <Pressable onPress={() => router.push('/dates/new?profileId=' + id)} hitSlop={12}><AppText variant="label">Plan date</AppText></Pressable>
+        <Pressable onPress={() => router.push({ pathname: '/dates/new', params: { profileId: String(id) } })} hitSlop={12}><AppText variant="label">Plan date</AppText></Pressable>
         <Pressable onPress={menu} hitSlop={12}><AppText variant="label">More</AppText></Pressable>
       </View>
       <FlatList
